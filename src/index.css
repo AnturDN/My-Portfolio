@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+
+
+
+/* Sliding left to right */
+@keyframes slide-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.slide-left {
+  display: flex;
+  gap: 2rem;
+  animation: slide-left 20s linear infinite;
+}
+
+.slide-right {
+  display: flex;
+  gap: 2rem;
+  animation: slide-right 20s linear infinite;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(85, 26, 85); /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c747db; /* Fuchsia-500 */
+  border-radius: 10px;
+  border: 3px solid transparent;
+  box-shadow: 0 0 10px #c747db, 0 0 20px #c747db; /* subtle glow */
+  transition: all 0.3s ease-in-out; /* smooth transition */
+}
+
+/* Hover effect for glowing scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e879f9; /* lighter fuchsia on hover */
+  box-shadow: 0 0 15px #e879f9, 0 0 25px #e879f9; /* brighter glow */
+}
+
+
+
+
+
+
+
