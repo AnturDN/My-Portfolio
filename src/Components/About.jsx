@@ -9,12 +9,12 @@ const cards = [
   {
     icon: <MdCodeOff />,
     title: "Development",
-    desc: "I can build clean, scalable, and modern web applications using React.js, Tailwind CSS, Laravel APIs, and the MERN stack.",
+    desc: "I build clean, scalable, and modern web applications using React.js, Tailwind CSS, Laravel APIs, and the MERN stack.",
   },
   {
     icon: <FaPaintbrush />,
     title: "Design",
-    desc: "I can create simple and responsive user interfaces using Tailwind CSS and Framer Motion to give smooth user experiences.",
+    desc: "I create simple and responsive user interfaces using Tailwind CSS and Framer Motion to give smooth user experiences.",
   },
   {
     icon: <FaBolt />,
