@@ -17,7 +17,6 @@ const VantaBackground = ({ children }) => {
 
       if (canceled) return;
 
-      // ✅ FIX: Prevent vertexColors warning
       THREE.MeshStandardMaterial.prototype.vertexColors = false;
       THREE.MeshBasicMaterial.prototype.vertexColors = false;
       THREE.MeshPhongMaterial.prototype.vertexColors = false;
