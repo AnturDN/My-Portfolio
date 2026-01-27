@@ -34,16 +34,15 @@ const Home = () => (
         responsive, user-friendly apps with clean code.
       </p>
 
-      {/* Download Button */}
       <a
         href="/Antur _Deb_Nath's_Resume.pdf"
-        download
+        target="_blank"
+        rel="noopener noreferrer"
         className="font-bold text-lg bg-fuchsia-900 px-6 py-3 rounded-3xl mt-4 inline-block text-center transition-shadow hover:shadow-[0_0_20px_rgba(255,0,255,0.5)] duration-300"
       >
-        Download CV
+        My Resume
       </a>
 
-      {/* Social Icons */}
       <div className="flex justify-center md:justify-start gap-6 mt-4">
         {socialLinks.map((link, idx) => (
           <motion.a
@@ -61,7 +60,6 @@ const Home = () => (
       </div>
     </motion.div>
 
-    {/* Right Profile Image */}
     <motion.div
       className="relative flex justify-center items-center mt-10"
       initial={{ opacity: 0, scale: 0.8 }}
