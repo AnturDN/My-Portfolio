@@ -23,19 +23,17 @@ const cards = [
   },
 ];
 
-// Parent container variant
 const containerVariant = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, // cards appear one after another
+      staggerChildren: 0.2,
       delayChildren: 0.2,
     },
   },
 };
 
-// Each card variant
 const cardVariant = {
   hidden: { opacity: 0, y: 50 },
   show: {
@@ -53,7 +51,6 @@ const About = () => {
     >
       <section className="w-full max-w-6xl mx-auto">
 
-        {/* Heading */}
         <motion.span
           className="block text-center text-3xl sm:text-4xl font-bold text-fuchsia-500 drop-shadow-[0_0_10px_#d946ef] mb-20"
           initial={{ opacity: 0, y: -30 }}
@@ -64,7 +61,6 @@ const About = () => {
           About Me
         </motion.span>
 
-        {/* Cards */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
           variants={containerVariant}
@@ -79,7 +75,6 @@ const About = () => {
               whileHover={{ scale: 1.08 }}
               className="p-8 rounded-3xl backdrop-blur-xl bg-gray-900/40 border border-fuchsia-500 shadow-[0_0_20px_rgba(255,0,255,0.5)] hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] transition-all flex flex-col items-center text-center"
             >
-              {/* Icon */}
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ type: "spring", stiffness: 120, damping: 18 }}
