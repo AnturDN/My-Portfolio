@@ -10,7 +10,7 @@ const Footer = () => {
     { icon: <FaWhatsapp />, url:"https://wa.me/8801770125058"},
   ];
 
-  // Animation for entire footer
+
   const fadeUp = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
@@ -25,7 +25,6 @@ const Footer = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-6 text-center md:text-left">
 
-        {/* Name */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +36,6 @@ const Footer = () => {
           <span className="text-fuchsia-500 font-bold ml-2">Antur DebNath</span>
         </motion.h1>
 
-        {/* Social Icons */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -69,7 +67,6 @@ const Footer = () => {
           ))}
         </motion.div>
 
-        {/* Copyright */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,3 +83,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
