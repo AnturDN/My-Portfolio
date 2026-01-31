@@ -45,7 +45,7 @@ const Header = () => {
           </span>
         </a>
 
-        {/* Toggle Button */}
+        
         <div className="flex items-center md:hidden">
           <button
             ref={menuToggleRef}
@@ -53,13 +53,12 @@ const Header = () => {
             className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-800 focus:outline-none"
           >
             {isOpen ? (
-              // X ICON
               <svg className="h-7 w-7 text-fuchsia-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              // HAMBURGER ICON
+              
               <svg className="h-7 w-7 text-fuchsia-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                   d="M4 6h16M4 12h16m-7 6h7" />
@@ -68,7 +67,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menu */}
         <div
           ref={mobileMenuRef}
           className="backdrop-blur-lg w-full md:block md:w-auto max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:max-h-none"
