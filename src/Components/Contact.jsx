@@ -53,7 +53,6 @@ const Contact = () => {
       id="contact"
       className="py-20 px-6 relative overflow-hidden min-h-screen flex items-center"
     >
-      {/* Glow Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-fuchsia-600/25 blur-3xl rounded-full" />
       </div>
@@ -65,7 +64,6 @@ const Contact = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-lg w-full mx-auto"
       >
-        {/* Heading */}
         <motion.div variants={item} className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_0_8px_#d946ef]">
             Get In Touch
@@ -75,7 +73,6 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        {/* Form */}
         <motion.form
           ref={form}
           onSubmit={sendEmail}
