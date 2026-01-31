@@ -65,10 +65,8 @@ const Projects = () => {
             whileHover={{ y: -20 }}
             style={{ transition: "all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)" }}
           >
-            {/* Glow effect on hover */}
             <div className="absolute  inset-0 bg-linear-to-br from-fuchsia-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-            {/* Image */}
             <div className="overflow-hidden">
               <motion.img
                 src={project.img}
@@ -79,7 +77,6 @@ const Projects = () => {
               />
             </div>
 
-            {/* Content */}
             <div className="relative p-6 space-y-4">
               <h3 className="text-2xl font-bold text-white">{project.title}</h3>
               <p className="text-gray-300 text-sm leading-relaxed">{project.desc}</p>
